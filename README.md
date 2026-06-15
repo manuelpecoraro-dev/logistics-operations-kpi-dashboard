@@ -1,4 +1,4 @@
-﻿Logistics Operations KPI Dashboard
+Logistics Operations KPI Dashboard
 
 A Python-based data project that simulates a logistics operations reporting workflow.
 
@@ -14,7 +14,7 @@ Dashboard Preview
 
 Final dashboard output:
 
-report/dashboard_logistica.html
+"report/dashboard_logistica.html"
 
 ---
 
@@ -36,14 +36,14 @@ HTML dashboard generation
 
 Main Features
 
-- synthetic logistics dataset generation;
-- data cleaning and validation;
-- operational KPI calculation;
-- grouped KPI analysis by carrier, station, and exception type;
-- reproducible pipeline with fixed random seed;
-- final HTML dashboard generated from Python scripts;
-- Jupyter Notebook analysis;
-- GitHub-ready project structure.
+- Synthetic logistics dataset generation
+- Data cleaning and validation
+- Operational KPI calculation
+- Grouped KPI analysis by carrier, station, and exception type
+- Reproducible pipeline with fixed random seed
+- Final HTML dashboard generated from Python scripts
+- Jupyter Notebook analysis
+- GitHub-ready project structure
 
 ---
 
@@ -51,59 +51,58 @@ KPIs Calculated
 
 The project calculates:
 
-- total shipments;
-- total packages;
-- delivered packages;
-- failed packages;
-- delivery success rate;
-- failed delivery rate;
-- average delay;
-- delayed shipments;
-- percentage of delayed shipments;
-- top operational exceptions.
+- Total shipments
+- Total packages
+- Delivered packages
+- Failed packages
+- Delivery success rate
+- Failed delivery rate
+- Average delay
+- Delayed shipments
+- Percentage of delayed shipments
+- Top operational exceptions
 
 ---
 
 Folder Structure
 
 dashboard_kpi_logistica
-│   .gitignore
 │   main.py
 │   README.md
 │   requirements.txt
 │
-├───dati
-│   ├───grezzi
-│   │       shipments.csv
-│   └───elaborati
-│           shipments_clean.csv
-│           kpi_generali.csv
-│           kpi_carrier.csv
-│           kpi_station.csv
-│           kpi_anomalie.csv
+├── dati
+│   ├── grezzi
+│   │   └── shipments.csv
+│   └── elaborati
+│       ├── shipments_clean.csv
+│       ├── kpi_generali.csv
+│       ├── kpi_carrier.csv
+│       ├── kpi_station.csv
+│       └── kpi_anomalie.csv
 │
-├───documenti
-│       dizionario_dati.md
+├── documenti
+│   └── dizionario_dati.md
 │
-├───notebooks
-│       logistics_kpi_analysis.ipynb
+├── notebooks
+│   └── logistics_kpi_analysis.ipynb
 │
-├───report
-│   │   dashboard_logistica.html
-│   │   kpi_report.txt
-│   ├───grafici
-│   │       anomalie_principali.png
-│   │       failed_rate_carrier.png
-│   │       ritardo_medio_station.png
-│   └───screenshots
-│           dashboard_preview.png
+├── report
+│   ├── dashboard_logistica.html
+│   ├── kpi_report.txt
+│   ├── grafici
+│   │   ├── anomalie_principali.png
+│   │   ├── failed_rate_carrier.png
+│   │   └── ritardo_medio_station.png
+│   └── screenshots
+│       └── dashboard_preview.png
 │
-└───sorgente
-        calcola_kpi.py
-        genera_dashboard_html.py
-        genera_dati_finti.py
-        pulisci_dati.py
-        utils.py
+└── sorgente
+    ├── calcola_kpi.py
+    ├── genera_dashboard_html.py
+    ├── genera_dati_finti.py
+    ├── pulisci_dati.py
+    └── utils.py
 
 ---
 
@@ -113,21 +112,19 @@ The dataset is synthetically generated for portfolio and learning purposes.
 
 Each row represents one logistics shipment or operational route.
 
-Main fields:
-
 Field| Description
-shipment_id| Unique shipment identifier
-date| Shipment date
-station| Logistics station
-carrier| Delivery carrier
-route_id| Route identifier
-planned_departure| Planned departure time
-actual_departure| Actual departure time
-packages| Total packages
-delivered_packages| Successfully delivered packages
-failed_packages| Failed packages
-late_minutes| Delay in minutes
-exception_type| Main operational exception
+"shipment_id"| Unique shipment identifier
+"date"| Shipment date
+"station"| Logistics station
+"carrier"| Delivery carrier
+"route_id"| Route identifier
+"planned_departure"| Planned departure time
+"actual_departure"| Actual departure time
+"packages"| Total packages
+"delivered_packages"| Successfully delivered packages
+"failed_packages"| Failed packages
+"late_minutes"| Delay in minutes
+"exception_type"| Main operational exception
 
 ---
 
@@ -168,31 +165,29 @@ The synthetic dataset generation uses a fixed random seed.
 
 This means that running:
 
-```bash
 python main.py
-```
 
 will regenerate the same dataset, KPIs, charts, and final dashboard output.
 
 ---
 
-## Portfolio Value
+Portfolio Value
 
 This project demonstrates the ability to:
 
-- structure a Python data project;
-- generate and process operational data;
-- validate data quality;
-- calculate logistics KPIs;
-- export clean datasets for reporting;
-- create a reproducible dashboard;
-- document a project for GitHub.
+- Structure a Python data project
+- Generate and process operational data
+- Validate data quality
+- Calculate logistics KPIs
+- Export clean datasets for reporting
+- Create a reproducible dashboard
+- Document a project for GitHub
 
 It is especially relevant for roles related to logistics operations, supply chain, operations analysis, KPI reporting, process improvement, and junior data analysis.
 
 ---
 
-## Notes
+Notes
 
 This is a portfolio project based on synthetic data.
 
