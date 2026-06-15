@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+*.pyo
+
+.ipynb_checkpoints/
+
+.env
+venv/
+.venv/
+
+_archivio_locale_file_temporanei/
+dashboard_kpi_logistica_ARCHIVIO_TEMPORANEI/
