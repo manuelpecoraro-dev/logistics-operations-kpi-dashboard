@@ -1,193 +1,131 @@
-Logistics Operations KPI Dashboard
+# Logistics Operations KPI Dashboard
 
-A Python-based data project that simulates a logistics operations reporting workflow.
+Python data project for logistics KPI reporting, operational analysis, data cleaning and dashboard generation.
 
-The project generates a synthetic shipment dataset, cleans and validates the data, calculates operational KPIs, exports processed CSV files, and produces a final HTML dashboard with charts and business insights.
+This project simulates a small logistics reporting workflow similar to what an operations or supply chain team could use to monitor shipment performance, delivery issues, delays, carrier performance and operational exceptions.
 
-This project is designed as a portfolio case study for data, operations, logistics, supply chain, KPI reporting, and process improvement roles.
+## Dashboard Preview
 
----
+![Dashboard preview](report/screenshots/dashboard_preview.png)
 
-Dashboard Preview
+Final dashboard file:
 
-"Dashboard preview" (report/screenshots/dashboard_preview.png)
+`report/dashboard_logistica.html`
 
-Final dashboard output:
-
-"report/dashboard_logistica.html"
-
----
-
-Project Workflow
+## Project Workflow
 
 Synthetic data generation
-        ↓
 Data cleaning and validation
-        ↓
 KPI calculation
-        ↓
 CSV export
-        ↓
 Notebook analysis
-        ↓
 HTML dashboard generation
 
----
+## Main Features
 
-Main Features
+* Synthetic logistics dataset generation
+* Data cleaning and validation
+* KPI calculation
+* Carrier performance analysis
+* Station delay analysis
+* Operational exception analysis
+* Reproducible pipeline with fixed random seed
+* Final dashboard generated with Python
+* Jupyter Notebook analysis
+* GitHub-ready project structure
 
-- Synthetic logistics dataset generation
-- Data cleaning and validation
-- Operational KPI calculation
-- Grouped KPI analysis by carrier, station, and exception type
-- Reproducible pipeline with fixed random seed
-- Final HTML dashboard generated from Python scripts
-- Jupyter Notebook analysis
-- GitHub-ready project structure
+## KPIs Calculated
 
----
+* Total shipments
+* Total packages
+* Delivered packages
+* Failed packages
+* Delivery success rate
+* Failed delivery rate
+* Average delay
+* Delayed shipments
+* Top operational exceptions
 
-KPIs Calculated
+## Project Structure
 
-The project calculates:
-
-- Total shipments
-- Total packages
-- Delivered packages
-- Failed packages
-- Delivery success rate
-- Failed delivery rate
-- Average delay
-- Delayed shipments
-- Percentage of delayed shipments
-- Top operational exceptions
-
----
-
-Folder Structure
-
+```text
 dashboard_kpi_logistica
-│   main.py
-│   README.md
-│   requirements.txt
-│
+├── main.py
+├── README.md
+├── requirements.txt
 ├── dati
 │   ├── grezzi
-│   │   └── shipments.csv
 │   └── elaborati
-│       ├── shipments_clean.csv
-│       ├── kpi_generali.csv
-│       ├── kpi_carrier.csv
-│       ├── kpi_station.csv
-│       └── kpi_anomalie.csv
-│
 ├── documenti
-│   └── dizionario_dati.md
-│
 ├── notebooks
-│   └── logistics_kpi_analysis.ipynb
-│
 ├── report
 │   ├── dashboard_logistica.html
 │   ├── kpi_report.txt
 │   ├── grafici
-│   │   ├── anomalie_principali.png
-│   │   ├── failed_rate_carrier.png
-│   │   └── ritardo_medio_station.png
 │   └── screenshots
-│       └── dashboard_preview.png
-│
 └── sorgente
-    ├── calcola_kpi.py
-    ├── genera_dashboard_html.py
-    ├── genera_dati_finti.py
-    ├── pulisci_dati.py
-    └── utils.py
+```
 
----
+## Technologies Used
 
-Dataset
-
-The dataset is synthetically generated for portfolio and learning purposes.
-
-Each row represents one logistics shipment or operational route.
-
-Field| Description
-"shipment_id"| Unique shipment identifier
-"date"| Shipment date
-"station"| Logistics station
-"carrier"| Delivery carrier
-"route_id"| Route identifier
-"planned_departure"| Planned departure time
-"actual_departure"| Actual departure time
-"packages"| Total packages
-"delivered_packages"| Successfully delivered packages
-"failed_packages"| Failed packages
-"late_minutes"| Delay in minutes
-"exception_type"| Main operational exception
-
----
-
-Technologies Used
-
-- Python
-- CSV module
-- Pathlib
-- Matplotlib
-- Jupyter Notebook
-- HTML/CSS
+* Python
+* CSV module
+* Pathlib
+* Matplotlib
+* Jupyter Notebook
+* HTML/CSS
 
 All data is synthetic and generated for demonstration purposes.
 
----
-
-How to Run
+## How to Run
 
 Install requirements:
 
+```bash
 pip install -r requirements.txt
+```
 
 Run the full pipeline:
 
+```bash
 python main.py
+```
 
-This command regenerates the synthetic dataset, cleans the data, calculates KPIs, exports CSV files, and generates the final dashboard.
+This command regenerates the synthetic dataset, cleans the data, calculates KPIs, exports CSV files and generates the final dashboard.
 
 To regenerate only the dashboard:
 
+```bash
 python sorgente/genera_dashboard_html.py
+```
 
----
-
-Reproducibility
+## Reproducibility
 
 The synthetic dataset generation uses a fixed random seed.
 
 This means that running:
 
+```bash
 python main.py
+```
 
-will regenerate the same dataset, KPIs, charts, and final dashboard output.
+will regenerate the same dataset, KPIs, charts and final dashboard output.
 
----
-
-Portfolio Value
+## Portfolio Value
 
 This project demonstrates the ability to:
 
-- Structure a Python data project
-- Generate and process operational data
-- Validate data quality
-- Calculate logistics KPIs
-- Export clean datasets for reporting
-- Create a reproducible dashboard
-- Document a project for GitHub
+* Structure a Python data project
+* Generate and process operational data
+* Validate data quality
+* Calculate logistics KPIs
+* Export clean datasets for reporting
+* Create a reproducible dashboard
+* Document a project for GitHub
 
-It is especially relevant for roles related to logistics operations, supply chain, operations analysis, KPI reporting, process improvement, and junior data analysis.
+The project is relevant for logistics operations, supply chain, operations analysis, KPI reporting, process improvement and junior data analysis roles.
 
----
-
-Notes
+## Notes
 
 This is a portfolio project based on synthetic data.
 
