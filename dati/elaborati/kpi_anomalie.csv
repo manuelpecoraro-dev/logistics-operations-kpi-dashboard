@@ -1,0 +1,9 @@
+exception_type,conteggio
+late_departure,35
+none,32
+vehicle_issue,35
+missing_packages,36
+customer_unavailable,38
+weather_delay,40
+operational_delay,41
+address_issue,43

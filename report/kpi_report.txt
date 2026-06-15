@@ -1,0 +1,92 @@
+LOGISTICS OPERATIONS KPI REPORT
+===============================
+
+KPI GENERALI
+------------
+Totale spedizioni: 300
+Totale pacchi: 44790
+Totale pacchi consegnati: 43257
+Totale pacchi falliti: 1533
+Delivery success rate: 96.58%
+Failed delivery rate: 3.42%
+Ritardo medio: 21.76 minuti
+Spedizioni in ritardo: 291
+Percentuale spedizioni in ritardo: 97.0%
+
+KPI PER CARRIER
+---------------
+Carrier_A
+  Totale spedizioni: 82
+  Totale pacchi: 12083
+  Delivery success rate: 96.34%
+  Failed delivery rate: 3.66%
+  Ritardo medio: 22.26 minuti
+
+Carrier_D
+  Totale spedizioni: 76
+  Totale pacchi: 11186
+  Delivery success rate: 96.67%
+  Failed delivery rate: 3.33%
+  Ritardo medio: 21.86 minuti
+
+Carrier_C
+  Totale spedizioni: 73
+  Totale pacchi: 10874
+  Delivery success rate: 96.64%
+  Failed delivery rate: 3.36%
+  Ritardo medio: 21.58 minuti
+
+Carrier_B
+  Totale spedizioni: 69
+  Totale pacchi: 10647
+  Delivery success rate: 96.68%
+  Failed delivery rate: 3.32%
+  Ritardo medio: 21.26 minuti
+
+KPI PER STATION
+---------------
+ROMA_01
+  Totale spedizioni: 49
+  Totale pacchi: 6914
+  Delivery success rate: 96.76%
+  Failed delivery rate: 3.24%
+  Ritardo medio: 22.43 minuti
+
+NAPOLI_01
+  Totale spedizioni: 64
+  Totale pacchi: 9738
+  Delivery success rate: 96.49%
+  Failed delivery rate: 3.51%
+  Ritardo medio: 24.05 minuti
+
+ROMA_02
+  Totale spedizioni: 69
+  Totale pacchi: 10402
+  Delivery success rate: 96.53%
+  Failed delivery rate: 3.47%
+  Ritardo medio: 20.32 minuti
+
+BOLOGNA_01
+  Totale spedizioni: 64
+  Totale pacchi: 9805
+  Delivery success rate: 96.61%
+  Failed delivery rate: 3.39%
+  Ritardo medio: 20.98 minuti
+
+MILANO_01
+  Totale spedizioni: 54
+  Totale pacchi: 7931
+  Delivery success rate: 96.55%
+  Failed delivery rate: 3.45%
+  Ritardo medio: 21.2 minuti
+
+CONTEGGIO ANOMALIE
+------------------
+late_departure: 35
+none: 32
+vehicle_issue: 35
+missing_packages: 36
+customer_unavailable: 38
+weather_delay: 40
+operational_delay: 41
+address_issue: 43

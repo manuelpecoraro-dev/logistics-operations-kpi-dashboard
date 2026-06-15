@@ -1,0 +1,5 @@
+carrier,totale_spedizioni,totale_pacchi,totale_consegnati,totale_falliti,totale_ritardo,delivery_success_rate_percent,failed_delivery_rate_percent,ritardo_medio_minuti
+Carrier_A,82,12083,11641,442,1825,96.34,3.66,22.26
+Carrier_D,76,11186,10814,372,1661,96.67,3.33,21.86
+Carrier_C,73,10874,10509,365,1575,96.64,3.36,21.58
+Carrier_B,69,10647,10293,354,1467,96.68,3.32,21.26

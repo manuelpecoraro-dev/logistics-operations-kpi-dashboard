@@ -1,0 +1,6 @@
+station,totale_spedizioni,totale_pacchi,totale_consegnati,totale_falliti,totale_ritardo,delivery_success_rate_percent,failed_delivery_rate_percent,ritardo_medio_minuti
+ROMA_01,49,6914,6690,224,1099,96.76,3.24,22.43
+NAPOLI_01,64,9738,9396,342,1539,96.49,3.51,24.05
+ROMA_02,69,10402,10041,361,1402,96.53,3.47,20.32
+BOLOGNA_01,64,9805,9473,332,1343,96.61,3.39,20.98
+MILANO_01,54,7931,7657,274,1145,96.55,3.45,21.2

@@ -1,0 +1,273 @@
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Logistics Operations KPI Dashboard</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #EEF3F8;
+            font-family: Arial, sans-serif;
+            color: #102A43;
+        }
+
+        .page {
+            max-width: 1180px;
+            margin: 0 auto;
+            padding: 34px 28px;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #0F172A, #1E293B);
+            color: white;
+            padding: 30px 32px;
+            border-radius: 22px;
+            margin-bottom: 22px;
+            box-shadow: 0 12px 28px rgba(15, 23, 42, 0.18);
+        }
+
+        .header h1 {
+            margin: 0 0 8px 0;
+            font-size: 31px;
+        }
+
+        .header p {
+            margin: 0;
+            color: #D9E2EC;
+            line-height: 1.5;
+            max-width: 900px;
+        }
+
+        .badge {
+            display: inline-block;
+            background: #2563EB;
+            color: white;
+            padding: 6px 11px;
+            border-radius: 999px;
+            font-size: 12px;
+            margin-bottom: 14px;
+            letter-spacing: 0.2px;
+        }
+
+        .kpi-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 16px;
+            margin-bottom: 22px;
+        }
+
+        .kpi-card {
+            background: white;
+            border-radius: 18px;
+            padding: 20px;
+            box-shadow: 0 8px 22px rgba(16, 42, 67, 0.08);
+            border: 1px solid #D9E2EC;
+        }
+
+        .kpi-card.blue {
+            border-top: 5px solid #2563EB;
+        }
+
+        .kpi-card.green {
+            border-top: 5px solid #16A34A;
+        }
+
+        .kpi-card.orange {
+            border-top: 5px solid #F97316;
+        }
+
+        .kpi-card.red {
+            border-top: 5px solid #DC2626;
+        }
+
+        .kpi-label {
+            font-size: 13px;
+            color: #52616B;
+            margin-bottom: 10px;
+        }
+
+        .kpi-value {
+            font-size: 34px;
+            font-weight: 700;
+            color: #102A43;
+        }
+
+        .kpi-note {
+            margin-top: 10px;
+            font-size: 12px;
+            color: #829AB1;
+            line-height: 1.4;
+        }
+
+        .insight-box {
+            background: white;
+            border-radius: 18px;
+            padding: 20px 24px;
+            margin-bottom: 22px;
+            box-shadow: 0 8px 22px rgba(16, 42, 67, 0.08);
+            border-left: 6px solid #2563EB;
+        }
+
+        .insight-box h2 {
+            margin-top: 0;
+            font-size: 20px;
+        }
+
+        .insight-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 14px;
+        }
+
+        .insight {
+            background: #F4F7FB;
+            border-radius: 14px;
+            padding: 14px;
+            font-size: 14px;
+            line-height: 1.45;
+        }
+
+        .section {
+            background: white;
+            border-radius: 18px;
+            padding: 22px 24px;
+            margin-bottom: 22px;
+            box-shadow: 0 8px 22px rgba(16, 42, 67, 0.08);
+            border: 1px solid #D9E2EC;
+        }
+
+        .section h2 {
+            margin-top: 0;
+            margin-bottom: 6px;
+            font-size: 22px;
+        }
+
+        .section p {
+            color: #52616B;
+            font-size: 14px;
+            margin-top: 0;
+            line-height: 1.5;
+        }
+
+        .section img {
+            display: block;
+            width: 100%;
+            max-width: 980px;
+            margin: 10px auto 0 auto;
+        }
+
+        .footer {
+            color: #829AB1;
+            font-size: 12px;
+            text-align: center;
+            margin-top: 28px;
+        }
+
+        @media (max-width: 900px) {
+            .kpi-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .insight-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page">
+
+        <div class="header">
+            <div class="badge">Python Data Pipeline Output</div>
+            <h1>Logistics Operations KPI Dashboard</h1>
+            <p>
+                Operational dashboard generated through Python scripts from processed CSV files.
+                The project simulates a data/operations pipeline to monitor shipments,
+                logistics performance, delays, carriers and operational exceptions.
+            </p>
+        </div>
+
+        <div class="kpi-grid">
+            <div class="kpi-card blue">
+                <div class="kpi-label">Total shipments</div>
+                <div class="kpi-value">300</div>
+                <div class="kpi-note">Total shipments analyzed in the dataset.</div>
+            </div>
+
+            <div class="kpi-card green">
+                <div class="kpi-label">Delivery success rate</div>
+                <div class="kpi-value">96,6%</div>
+                <div class="kpi-note">Percentage of packages delivered successfully.</div>
+            </div>
+
+            <div class="kpi-card orange">
+                <div class="kpi-label">Average delay</div>
+                <div class="kpi-value">21,76 min</div>
+                <div class="kpi-note">Average delay rilevato sulle spedizioni.</div>
+            </div>
+
+            <div class="kpi-card red">
+                <div class="kpi-label">Failed packages</div>
+                <div class="kpi-value">1.533</div>
+                <div class="kpi-note">Packages not delivered successfully.</div>
+            </div>
+        </div>
+
+        <div class="insight-box">
+            <h2>Operational insights</h2>
+            <div class="insight-grid">
+                <div class="insight">
+                    <b>Highest-delay station:</b><br>
+                    NAPOLI_01 with 24,1 minutes average delay.
+                </div>
+
+                <div class="insight">
+                    <b>Top exception type:</b><br>
+                    Address Issue with 43 occurrences.
+                </div>
+
+                <div class="insight">
+                    <b>Carrier to monitor:</b><br>
+                    Carrier_A with a failed delivery rate of 3,7%.
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Average delay per station</h2>
+            <p>
+                Comparison of stations by average operational delay.
+                Useful for identifying areas that may require deeper investigation.
+            </p>
+            <img src="grafici/ritardo_medio_station.png" alt="Average delay per station">
+        </div>
+
+        <div class="section">
+            <h2>Failed delivery rate per carrier</h2>
+            <p>
+                Comparison of carriers by failed package percentage.
+                This metric is easier to read than success rate when carrier performance is very similar.
+            </p>
+            <img src="grafici/failed_rate_carrier.png" alt="Failed delivery rate per carrier">
+        </div>
+
+        <div class="section">
+            <h2>Main operational exceptions</h2>
+            <p>
+                Distribution of the main operational exceptions, excluding records with no exception.
+                The chart helps identify the most frequent issues impacting the process.
+            </p>
+            <img src="grafici/anomalie_principali.png" alt="Main operational exceptions">
+        </div>
+
+        <div class="footer">
+            Generated with Python from processed CSV files — Logistics KPI Portfolio Project
+        </div>
+
+    </div>
+</body>
+</html>
